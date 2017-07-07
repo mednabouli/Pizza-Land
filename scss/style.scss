@@ -1,0 +1,154 @@
+
+$bulbap-green: #5E9426;
+$gray-lighter: #f2f2f2;
+$gray-light: #999;
+$body-color: #333;
+
+body {
+  background: $gray-lighter;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: $body-color;
+}
+.bg {
+  background-image: url('http://cdn2.koreanbapsang.com/wp-content/uploads/2010/02/DSC_0441-e1421376777101.jpg');
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position:left top;
+  background-size:cover;
+
+}
+
+.layer {
+  background: rgba(255,255,255,.9);
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+  background-position:left top;
+  background-size:cover;
+  overflow: scroll;
+  animation-duration: 2s;
+  animation-delay: 1s;
+}
+.logo {
+  animation-duration: 1s;
+  animation-delay: 1s;
+  svg {
+    margin: 60px auto 30px auto;
+    width: 260px;
+    height: 260px;
+    background: $bulbap-green;
+    border-radius: 100%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+}
+
+.main-content {
+  animation-duration: 0.5s;
+  animation-delay: 1.8s;
+  .info-content  {
+    margin: 10px auto 30px auto;
+    text-align: left;
+    @media (min-width: 768px) {
+      text-align: center;
+    }
+  }
+  h1.display-3 {
+    font-weight: 500;
+    color: $body-color;
+    font-size: 2.5rem;
+    @media (min-width: 768px) {
+      font-size: 4.5rem;
+    }
+  }
+
+  .display-3 {
+    font-weight: 300;
+    color: $gray-light;
+    font-size: 2.5rem;
+    @media (min-width: 768px) {
+      font-size: 4.5rem;
+    }
+  }
+}
+
+.btn-outline-bulbap {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $bulbap-green;
+  background-image: none;
+  background-color: #fff;
+  border-color: $bulbap-green;
+  &:hover {
+    background-color: $bulbap-green;
+    border-color: $bulbap-green;
+    color: #fff;
+  }
+}
+
+.social-links {
+  animation-duration: 0.5s;
+  animation-delay: 2s;
+  margin: 30px auto;
+  .contact-form {
+    margin: 15px auto;
+    .form-control:focus {
+      color: #464a4c;
+      background-color: #fff;
+      border-color: $bulbap-green;
+    }
+  }
+  .social-media {
+    margin: 30px auto;
+    a:hover {
+      text-decoration: none;
+    }
+    .social-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+      border: 2px solid $bulbap-green;
+      color: $bulbap-green;
+      font-size: 20px;
+      line-height: 46px;
+      margin: 10px;
+      transition: all .15s linear;
+      &:hover{
+        border: 2px solid $bulbap-green;
+        color: #fff;
+        background-color: $bulbap-green;
+      }
+    }
+  }
+}
+
+.location {
+  animation-duration: 1s;
+  animation-delay: 2.2s;
+  margin: 30px auto;
+  .map {
+      position: relative;
+      padding-bottom: 75%; // This is the aspect ratio
+      height: 0;
+      overflow: hidden;
+  }
+  .map iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100% !important;
+      height: 100% !important;
+  }
+}
+
+
+.footer{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: $bulbap-green;
+  color: #fff;
+  padding: 15px 0;
+  margin-top: 60px;
+}

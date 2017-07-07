@@ -1,0 +1,148 @@
+body {
+  background-color: #da2121;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #333;
+}
+
+.bg {
+  background-color: #da2121;
+}
+
+.layer {
+  background: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: left top;
+  background-size: cover;
+  overflow: scroll;
+  overflow-x: hidden;
+  animation-duration: 2s;
+  animation-delay: 1s;
+}
+
+.logo {
+  animation-duration: 1s;
+  animation-delay: 1s;
+}
+.logo svg {
+  margin: 60px auto 30px auto;
+  width: 260px;
+  height: 260px;
+  background: #f3c330;
+  border-radius: 100%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.main-content {
+  animation-duration: 0.5s;
+  animation-delay: 1.8s;
+}
+.main-content .info-content {
+  margin: 10px auto 30px auto;
+  text-align: left;
+}
+@media (min-width: 768px) {
+  .main-content .info-content {
+    text-align: center;
+  }
+}
+.main-content h1.display-3 {
+  font-weight: 500;
+  color: #333;
+  font-size: 2.5rem;
+}
+@media (min-width: 768px) {
+  .main-content h1.display-3 {
+    font-size: 4.5rem;
+  }
+}
+.main-content .display-3 {
+  font-weight: 300;
+  color: #999;
+  font-size: 2.5rem;
+}
+@media (min-width: 768px) {
+  .main-content .display-3 {
+    font-size: 4.5rem;
+  }
+}
+
+.btn-outline-bulbap {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #f3c330;
+  background-image: none;
+  background-color: #fff;
+  border-color: #f3c330;
+}
+.btn-outline-bulbap:hover {
+  background-color: #f3c330;
+  border-color: #f3c330;
+  color: #fff;
+}
+
+.social-links {
+  animation-duration: 0.5s;
+  animation-delay: 2s;
+  margin: 30px auto;
+}
+.social-links .contact-form {
+  margin: 15px auto;
+}
+.social-links .contact-form .form-control:focus {
+  color: #464a4c;
+  background-color: #fff;
+  border-color: #f3c330;
+}
+.social-links .social-media {
+  margin: 30px auto;
+}
+.social-links .social-media a:hover {
+  text-decoration: none;
+}
+.social-links .social-media .social-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 2px solid #f3c330;
+  color: #f3c330;
+  font-size: 20px;
+  line-height: 46px;
+  margin: 10px;
+  transition: all .15s linear;
+}
+.social-links .social-media .social-icon:hover {
+  border: 2px solid #f3c330;
+  color: #fff;
+  background-color: #f3c330;
+}
+
+.location {
+  animation-duration: 1s;
+  animation-delay: 2.2s;
+  margin: 30px auto;
+}
+.location .map {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+}
+.location .map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.footer {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #f3c330;
+  color: #fff;
+  padding: 15px 0;
+  margin-top: 60px;
+}
